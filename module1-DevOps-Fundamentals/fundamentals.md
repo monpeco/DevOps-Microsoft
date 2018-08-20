@@ -366,3 +366,22 @@ Drawing the connection between how your organization performs some action and wh
 ---
 
 #### DevOps Fundamentals   Change Agents and the DevOps Journey   Video: Change Agents for DevOps
+
+#### DevOps Fundamentals   Change Agents and the DevOps Journey   Case Study- Microsoft Developer Division Moves to DevOps
+
+Over seven years, the Microsoft Developer Division (DevDiv) embraced Agile practices. The division achieved a 15-times reduction in technical debt through solid engineering practices, drawn heavily from XP. They trained everyone on Scrum, multidisciplinary teams, and product ownership across the division. They significantly focused on the flow of value to customers. By the time they shipped Visual Studio 2010, the product line achieved a level of customer recognition that was unparalleled.
+
+After they shipped Microsoft Visual Studio 2010, the team knew that they needed to begin converting Team Foundation Server into a software as a service (SaaS) offering. The SaaS version, now called Visual Studio Online (VSO), would be hosted on Microsoft Azure, and to succeed with that they needed to adopt DevOps practices.
+
+That meant that the division needed to expand their practices from Agile to DevOps. A tacit assumption of Agile was that the Product Owner was omniscient and could groom the backlog correctly. In contrast, when you run a high-reliability service, you can observe how customers are actually using its capabilities in near real-time. You can release frequently, experiment with improvements, measure, and ask customers how they perceive the changes. The data that you collect becomes the basis for the next set of improvements you do.
+
+In this way, a DevOps product backlog is really a set of hypotheses that become experiments in the running software and allow a cycle of continuous feedback. DevOps grew from Agile based on four trends:
+
+Unlike many “born-in–the-cloud” companies, Microsoft did not start with a SaaS offering. Most of the customers were using the on-premises version of their software (Team Foundation Server). When VSO was started VSO, the division determined that they would maintain a single code base for both the SaaS and “box” versions of the product, developing cloud first.
+
+When an engineer pushes code, it triggers a continuous integration pipeline. At the end of every three-week sprint, they release to the cloud, and after four to five sprints, they release a quarterly update for the on-premises product, as illustrated below:
+
+---
+
+#### DevOps Fundamentals   Change Agents and the DevOps Journey   Video: Reflecting on the DevOps Journey
+
