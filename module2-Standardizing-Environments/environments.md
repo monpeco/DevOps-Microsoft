@@ -121,3 +121,19 @@ Learn more
 ---
 
 #### Standardizing Environments   Deployment and Configuration   Benefits of Configuration Management
+
+Here are five reasons to manage configuration and app settings variations per environment in a deployment tool:
+
+* More maintainable: You can manage variables and secrets at multiple levels. The variables that are needed in many release definitions can be stored in a project. You can also define configuration variables that are scoped to a specific release definition or to a specific environment in a release definition. 
+
+* Fewer locations to update: By storing your configuration and app settings in a deployment tool, if settings change at a given time, you only need to update the settings in the deployment tool rather than in every possible file in which the setting is hard-coded. Furthermore, by storing them at the right scope, you do not have to update all the release definitions or environments in which they are used.
+
+* Fewer mistakes: When you store the appropriate settings for each environment in the environment itself in the deployment tool, you won’t accidentally point to the development connection string when in production. The values for settings are siloed out per environment, making it difficult to actively mix up if you are using a deployment tool.
+
+* More secure: When you have connection strings, passwords, or any other settings stored in plain text in a settings file (such as a web.config file), anyone who has access to the code can potentially access a database or machine. A deployment tool such as Visual Studio Team Services provides a rich permissions model that governs who can manage and use secrets at each scope.
+
+* More reliable: By automating the process of transforming configurations through a deployment tool, you’ll be able to count on the transforms always happening during a deployment and setting the appropriate values.
+
+---
+
+#### Standardizing Environments   Deployment and Configuration   Infrastructure as Code
