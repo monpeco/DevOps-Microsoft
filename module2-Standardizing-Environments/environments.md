@@ -169,4 +169,49 @@ The following table lists the major differences between manual deployment and In
 
 #### Standardizing Environments   Deployment and Configuration   Infrastructure as Code with Terraform
 
+Terraform is an open-source Infrastructure as Code tool. You can use it to define a datacenter by building, changing, and versioning infrastructures.
 
+Terraform has four key features:
+
+Infrastructure as Code
+Execution Plans
+Resource Graph
+Change Automation
+The tool uses a high-level configuration from which it generates an execution plan describing what it will do to reach the desired state, and then executes it to build the described infrastructure.
+
+If this configuration changes, Terraform is able to verify what changed and it creates incremental execution plans that can be applied.
+
+Terraform builds a graph of your resources, and parallelizes the creation and modification of any non-dependent resources. It supports custom in-house infrastructures and popular cloud providers such as Microsoft Azure. Terraform can manage Azure low-level components such as Storage and Compute, and also high-level components such as Security Groups or Resource Groups.
+
+Let's take the example of creating an Azure Resource Group. To do that, you should start by creating a new Terraform template (main.tf):
+
+```
+resource "azurerm_resource_group" "my-terraform-group" {
+    name = "my-resource-group-name"
+    location = "West US"
+}
+```
+This should be followed by initializing a working directory containing Terraform configuration files.
+
+    terraform init
+
+Preview the resources to be created by the Terraform template with:
+
+    terraform plan
+
+Finally, provision the Azure resources with:
+
+    terraform apply
+
+After applying this latest change to your Azure infrastructure, the actual state of the new infrastructure is stored in a terraform.tfstate file that was created after the first run of Terraform. By default, Terraform stores the state locally in a file named terraform.tfstate.
+
+The fact that this file is stored locally makes collaboration on a shared infrastructure complex, given the merge conflicts that could result. To let a team collaborate on a shared infrastructure, one state should be used, and that is why Terraform allows the remote state feature. This is done by configuring Terraform to use Azure as a back end and Azure Blob Storage as a storage tool.
+
+Learn more
+* [Install and configure Terraform to provision VMs and other infrastructure into Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure)
+* [Create a complete Linux virtual machine infrastructure in Azure with Terraform](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-create-complete-vm)
+
+
+---
+
+#### Standardizing Environments   Deployment and Configuration   Video: Environment Deployment
