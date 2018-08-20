@@ -79,3 +79,45 @@ Learn more
 ---
 
 #### Standardizing Environments   Deployment and Configuration   Configuration management with SaltStack
+
+Configuration Management with SaltStack
+Salt (or SaltStack) is an open-source project, and you can read and modify its source code under the Apache license. 
+Its source code is available on [GitHub](https://github.com/saltstack/salt).
+
+Salt improves the way that system administrators, integrators, and developers configure and manage various aspects of a datacenter infrastructure, and it provides a different approach to some existing alternatives.
+
+Salt is built on a platform running relatively fast while enabling remote control of distributed infrastructures, code, and data. A layer of security is established while having two-way communication between the different components of the platform (Masters and Minions, among others).
+
+The infrastructure that you can manage by using this tool can be on-premises virtual machines, cloud infrastructure (such as Microsoft Azure), containers (Docker, for example), or bare-metal machines. You can also use Salt to manage hosted applications and platforms that rely on configuration files.
+
+You can use Salt as a tool to manage infrastructure and configuration as code, and to automate DevOps toolchains, because it automates source code and configuration management, event-driven tasks and scheduling jobs, as well as cloud and containers provisioning.
+
+Automating a cloud infrastructure such as Azure could be done by connecting Salt to Azure, thereby enabling testing and production environments to be managed using Salt CLI.
+
+SaltStack has four main axes:
+
+* Remote execution
+* Configuration automation
+* Cloud control
+* Event-driven orchestration
+
+Salt platform comes with different components such as Salt Masters, Salt Minions, Top Files, and Salt Cloud.
+
+By using Salt Cloud, you can orchestrate your Azure infrastructure by managing services such as storage accounts or affinity groups, or Azure Resource Manager and resources including VMs, disks, Blob storage virtual networks, or service certificates.
+
+When you create an Azure VM by using Salt, you generally do that from a remote machine where Salt Master is installed. To add a new Azure VM with Minions installed by default and managed by the Salt Master, the easiest way is to use Salt Cloud.
+
+Using a preconfigured virtual machine from Azure VM Depot or Azure Marketplace, you can easily enroll a Salt Master in Azure, then use Salt Cloud to create VMs with predefined configurations.
+
+It is also possible to use Salt Formulas to reproduce any VM configuration while keeping documentation of what is installed on your VMs.
+
+Formulas are pre-written Salt States that you use for various tasks such as installing, configuring, and managing a service lifecycle; managing packages installation; administrating users' accounts and their permissions; and many other common tasks.
+
+To orchestrate your Azure Cloud by using Salt, you will need Microsoft Azure SDK for Python, Microsoft Azure Storage SDK for Python, and the Python Requests library. Of course, you'll also need to have Salt installed and an Azure account.
+
+Learn more
+* [Provision and Configure your Infrastructure on Azure using SaltStack](https://www.microsoft.com/developerblog/2017/05/09/provision-configure-infrastructure-azure-using-saltstack/)
+
+---
+
+#### Standardizing Environments   Deployment and Configuration   Benefits of Configuration Management
