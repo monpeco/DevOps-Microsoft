@@ -137,3 +137,36 @@ Here are five reasons to manage configuration and app settings variations per en
 ---
 
 #### Standardizing Environments   Deployment and Configuration   Infrastructure as Code
+
+If you’ve ever received a middle-of-the-night emergency support call because of a crashed server, you know the pain of searching through multiple spreadsheets, or even your memory, to access the manual steps of setting up a new machine from scratch. There is also an age-old difficulty: keeping the development and production environments consistent. An easier way to remove the possibility of human error when initializing machines and treat environments like code so that they are stood up from a single consistent definition is to use Infrastructure as Code.
+
+A common analogy for using Infrastructure as Code is the distinction between owning pets and cattle. When you own pets, you give them names, you treat them individually, and if something bad happens to them, you care a lot. If you have a herd of cattle, you might still name them, but you treat them as a herd. In infrastructure terms, without treating environments as code, there might be severe implications if a machine crashes and you need to replace it (pets). If you use Infrastructure as Code, if a machine goes down, you can just spin up another machine with no issues (cattle).
+
+When designing scripts or definitions for Infrastructure as Code (IaC), it’s important to make sure that the code and tools are set up to be idempotent, or able to run multiple times without error and with consistency.
+
+Infrastructure as Code can also be set up with developers' help because many tools offer the ability to write code in familiar programming languages, even ones as simple as JavaScript Object Notification (JSON) definitions. Some examples of common tools you use can to work with Infrastructure as Code are Vagrant, Ansible, Puppet, Chef, Docker, Microsoft Windows PowerShell DSC, and cloud-provided tools such as Azure Resource Management templates.
+
+The following table lists the major differences between manual deployment and Infrastructure as Code:
+
+**Manual Deployment:**
+* Snowflakes server
+* Deployment steps vary by environment
+* More verification steps, and more elaborate manual processes
+* Increased documentation to account for differences
+* Deployment on weekends to allow time to recover from errors
+* Slower release cadence to minimize pain and long weekends
+* 
+
+**Infrastructure as Code:**
+* Consistent servers between enviroments
+* Environments created of scaled easily
+* Ensure infrastructure is code and fully automate creation and updates of environments
+* Transistion to inmutable infrastructure
+* Use blue/green deployments
+* Treat servers as cattle, not cats
+
+---
+
+#### Standardizing Environments   Deployment and Configuration   Infrastructure as Code with Terraform
+
+
