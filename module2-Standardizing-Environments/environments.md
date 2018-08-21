@@ -292,3 +292,41 @@ Example tools: Merosphere DCOS, Kubernetes, Azure Container Service, Docker Swar
 ---
 
 ####  Standardizing Environments   IaaS, PaaS and Containers   Infrastructure as a Service Environments
+
+Infrastructure as a service (IaaS) refers to an instant computing infrastructure that is provisioned and managed over the internet. IaaS helps you avoid the expense and complexity of buying and managing your own physical servers and other datacenter infrastructure. Each resource is offered as a separate service component, and you only need to rent one for as long as you need it. A cloud computing service provider, such as Microsoft Azure, manages the infrastructure, while you purchase, install, configure, and manage your own software—operating systems, middleware, and applications.
+
+Deciding whether to choose IaaS environments over platform as a service (PaaS) will depend on the type of application, dependencies, and architecture. It is easy to perform a lift-and-shift (move application from an on-premises VM to a hosted VM) for your application in IasS, and it is very likely the fastest way to get your application into the cloud or hosted elsewhere. However, although it is easy to scale up by adding capacity to the host machine, it is not easy to scale out to run your application on multiple machines with IaaS. Applications also become entangled with the OS, making the task of migrating applications between operating system (OS) versions very risky without fully testing on a new OS version.
+
+One way to think about whether to use Infrastructure as Code and IaaS environments is to consider scaling machines. If you need to add machines by scaling to x, you likely will want to use Infrastructure as Code with IaaS environments.
+
+Azure IaaS provides a range of options for developers looking to build directly on the operating system:
+
+* Virtual machines. Azure provides a wide range of Windows Server and Linux base operating system image.
+* Virtual Machine Scale Set. Virtual Machine Scale Sets provide an easy to use a slider-based mechanism for scaling identical groups of stateless virtual machines.
+* Azure Container Service. Container Service is a fully open-source based service that provides deployment, orchestration, and failover for Docker-based images across a cluster of virtual machines, by using Apache Mesos, Mesosphere's Marathon, or Docker Swarm.
+* Azure Marketplace. Azure Marketplace includes many popular application platforms or PaaS platforms in virtual machine images that you can operate and manage for yourself, including Pivotal Cloud Foundry.
+
+---
+
+#### Standardizing Environments   IaaS, PaaS and Containers   Platform as a Service Environments
+
+Platform as a service (PaaS) refers to a complete development and deployment environment in the cloud, with resources that enable you to deliver everything from simple cloud-based apps to sophisticated, cloud-enabled enterprise applications. You purchase the resources you need from a cloud service provider, such as Microsoft Azure, on a pay-as-you-go basis, and access them over a secure internet connection.
+
+Like IaaS, PaaS includes infrastructure—servers, storage, and networking—but also middleware, development tools, business intelligence (BI) services, database management systems, and more. PaaS is designed to support the complete web application lifecycle: build, test, deploy, manage, and update. You manage the applications and services you develop, and the cloud service provider typically manages everything else.
+
+Deciding whether to choose PaaS environments over IaaS and containers depends on the type of application, dependencies, and architecture. Typically, if the application is written in more recent code, isn’t dependent on configuration in the virtual machine, or is a web application, PaaS is a more feasible option. Regarding databases, PaaS might also be possible depending on how the databases are set up on-premises.
+
+For some applications, you still might have to perform rework so that the application works with the PaaS solutions (such as storage or caching). PaaS does make it very feasible to scale out to multiple machines, which gives it advantage over IaaS.
+
+One way to consider using Infrastructure as Code and PaaS environments is to identify your scaling requirements. If you need to scale on demand, and the number of machines matters less, then you should use PaaS environments.
+
+Azure platform services include the following offerings:
+
+* Azure App Service. This service allows you create the following app types from a single development experience: Web Apps, Mobile Apps, API Apps, and Logic Apps.
+* Azure Service Fabric. This is a mature, feature-rich micro-services application platform with built-in support for lifecycle management, stateful and state-less performance at scale, hybrid deployments, 24x7 availability, and cost efficiency.
+* Azure Cloud Services. This service is designed to support applications that are scalable, reliable, and cheap to operate.
+* Azure Functions. This is a server-less, event-driven experience that extends the existing Azure PaaS platform with capabilities to implement code triggered by events occurring in other Azure services, SaaS products, and on-premises systems.
+
+---
+
+#### Standardizing Environments   IaaS, PaaS and Containers   PaaS vs. IaaS
