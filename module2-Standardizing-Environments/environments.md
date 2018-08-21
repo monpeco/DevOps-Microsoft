@@ -330,3 +330,27 @@ Azure platform services include the following offerings:
 ---
 
 #### Standardizing Environments   IaaS, PaaS and Containers   PaaS vs. IaaS
+
+
+The e-book The Developer's Guide to Microsoft Azure uses a car analogy to differentiate a developer platform from an infrastructure platform.
+
+![analogy](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/ede2c5a4c30ee455a66ab98e6f5e0ba8/asset-v1:Microsoft+DEVOPS200.1x+2T2018+type@asset+block/M2L3T4_NWdvMyj.png)
+If you own a car, you have to go through the purchase process, buy insurance, maintain and service the vehicle over a long period of time, and provide parking or garaging. If you are renting a car, you get the benefit of a car at your disposal for a time period without any of the overhead of ownership. And of course, using an rideshare service such as Uber or a taxi is likely to be the most affordable option, but those options can limit flexibility. You might have to wait five minutes, or possibly stand out in the rain waiting for a ride.
+
+Similarly, you can get more from your scarce developer time by using an application platform that removes complexity and maintenance responsibility. There might be some tradeoff considerations around flexibility, but overall, you can get more done faster and with lower total cost of ownership by building on platform as a service (PaaS).
+
+
+---
+
+#### Standardizing Environments   IaaS, PaaS and Containers   Container Environments
+
+
+
+
+
+
+
+
+
+
+
