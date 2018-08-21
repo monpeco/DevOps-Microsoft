@@ -244,6 +244,18 @@ The following table lists the major differences between manual configuration and
 
 #### Standardizing Environments   Deployment and Configuration   Video: Environment Configuration
 
+#### Standardizing Environments   Deployment and Configuration   Effectively using Infrastructure as Code and Configuration as Code
 
+Infrastructure as Code (IaC) and configuration as code are not mutually exclusive processes. Instead, the two processes complement each other and can be used in tandem. The term configuration as code is not used as widely, and in some cases, IaC is used to describe both provisioning and configuring machines. Infrastructure as Code can also be configuration as code, but usually not vice versa.
+
+If you do use the two processes separately, a simple principle to keep in mind is that Infrastructure of Code refers to creating and provisioning machines, whereas configuration as code refers to configuring components and software on the machines (such opening ports and installing software).
+
+There are two types of approaches to Infrastructure as Code: declarative (functional) and imperative (procedural). The declarative approach states what the final state should be. When run, the script or definition will initialize or configure the machine to have the finished state that was declared. In the imperative approach, the script states the how for the final state of the machine by executing through the steps in order to get to the finished state.
+
+There are two configuration methods in IaC: push and pull. In the pull method, the machines configured will pull the configuration from a controlling server, such as a master server. In the push method, the controlling or master server will push the configuration to the target machines. Some organizations may benefit from Infrastructure as Code frameworks such as Windows PowerShell Desired-State Configuration (DSC).
+
+---
+
+#### Standardizing Environments   Deployment and Configuration   Video: Database as Code
 
 
