@@ -258,4 +258,37 @@ There are two configuration methods in IaC: push and pull. In the pull method, t
 
 #### Standardizing Environments   Deployment and Configuration   Video: Database as Code
 
+#### Standardizing Environments   IaaS, PaaS and Containers   Video: IaaS/PaaS/Containers
 
+
+**Infrastructure as a Service (IaaS)**
+
+* Machines generally hosted for you
+* Choosing IaaS environments depends on application
+* Scaling by machines, intead of percentages
+
+Example tools: Puppet, Chef, Vagrant, Ansible, Azure Resource Manager, Power Shell DSC
+
+
+**Platform as a Service (PaaS)**
+
+* Hosted platform to develop, manage, run applications without maintaining infrastructure
+* Choosing PaaS environments depends on application
+* Scaling by percentage, instead of machines
+
+Tools: Configuration files, PowerShell, shell scripts
+
+
+**Containers (Docker)**
+
+* Partition into multiple envieronments with shared OS
+* Many containers can run on one instance of OS
+* Tools orchestrate multiple Docker containers to create managed environments
+
+Example tools: Merosphere DCOS, Kubernetes, Azure Container Service, Docker Swarm
+
+
+
+---
+
+####  Standardizing Environments   IaaS, PaaS and Containers   Infrastructure as a Service Environments
