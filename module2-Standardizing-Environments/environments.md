@@ -215,3 +215,35 @@ Learn more
 ---
 
 #### Standardizing Environments   Deployment and Configuration   Video: Environment Deployment
+
+#### Standardizing Environments   Deployment and Configuration   Configuration as Code
+
+Configuration as code, along with Infrastructure as Code, can help you make the management and configuration of your environments automated and consistent. 
+
+Configuration as code scripts and environment definitions, when used with tools for managing system configuration, are usually idempotent, or can be run multiple times because the scripts or definitions will look for the state of services and install and configure if not running.
+
+Idempotence is the property that a deployment command always sets the target environment into the same configuration, regardless of the environment’s starting state. Idempotency is achieved by either automatically configuring an existing target or by discarding the existing target and re-creating a fresh environment.
+
+The following table lists the major differences between manual configuration and configuration as code:
+
+**Manual configuration**
+* Configuration bugs difficult to ID
+* Error prone
+* More verification steps, and more elaborate manual processes
+* Increased documentations
+* Deployment on weekends to allow time to recover from errors
+* Slower release cadence to minimize pain and long weekends
+
+**Configuration as Code**
+* Bugs easily reproducible
+* Consistent configurations
+* Increase deployment cadence to reduce amount of incremental change
+* Treat enviroments and configuration scripts as executable documentation
+
+---
+
+#### Standardizing Environments   Deployment and Configuration   Video: Environment Configuration
+
+
+
+
